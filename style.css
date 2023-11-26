@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Open Sans', sans-serif;  
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*navbar başlangıç*/
+nav{
+    background-color: rgb(42, 40, 40);
+    color: white;
+    padding: 1.6rem;
+}
+.navParent{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    display: inline-block;
+    padding-top: .4rem;
+}
+.menu li a{
+    color:white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.bi list{
+   display: none; 
+}
+/*header*/
+header{
+width: 100%;
+height: 80vh;
+border: 2px solid red;
+background:  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)), url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
+background-position: center;
+background-size: cover;
+color: white;
+}
+.headerContent{
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.headerBody{
+    width: 60%;
+    border: 2px solid blue;
+}
+.headerCard{
+    transform: translateY(-30%);
+}
+.cardsParent{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: .37s;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card p{
+    color: rgb(22, 46, 46);
+    margin-top: .5rem;
+}
+.card h3{
+    margin-top: .5rem;
+}
+.aboutParent{
+    display: flex;
+}
+.aboutLeft{
+width: 50%;
+
+}
+.aboutRight{
+    width: 50%;
+    display: flex;
+    align-items: center;
+} 
+footer{
+    background-color: rgb(42, 40, 40);  
+    color: white; 
+    padding: 2rem 0rem;
+    margin-top: 3rem;
+}
+footer ul li{
+    list-style: none;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.footerParent{
+    display: flex;
+    justify-content: space-between;
+}
+.footerBox{
+    width: 30%;
+    
+  
+
+}
+@media screen  and (max-width:700px)
+{
+.container{
+    width: 95%;
+}
+   .menu{
+    display: none;
+   } 
+   .bi.list{
+    display: block;
+    font-size: 2rem;
+   }
+   .headerBody{
+    width: 100%;
+   }
+   
+   .aboutParent{
+    display: block;
+}
+.aboutLeft,.aboutRight{
+    width: 100%;
+}
+.footerParent{
+    display: block;
+}
+.footerBox{
+    width: 100%;
+    margin-top: 2rem;
+}
+}
+@media screen and (max-width: 950px){
+    .cardsParent{
+        display: inline-block;
+       }
+       .card{
+        width: 100%;
+        margin-top: 1.5rem;
+       }
+       .headerCard{
+        transform: translateY(-5%);
+       }  
+}
